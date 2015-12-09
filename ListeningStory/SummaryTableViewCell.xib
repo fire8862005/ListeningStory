@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="SummaryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pkp-QA-QGG">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Am3-xU-4wz"/>
+                            <constraint firstAttribute="width" constant="60" id="krF-9n-wvQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浏览次数：00000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGB-pM-OXe">
+                        <rect key="frame" x="90" y="49" width="220" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="hoz-rD-e8u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大头儿子和小头爸爸" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6H-Jw-3wr">
+                        <rect key="frame" x="90" y="15" width="220" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Wny-Tx-Qh8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pkp-QA-QGG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="MMm-Sn-o1Y"/>
+                    <constraint firstItem="cGB-pM-OXe" firstAttribute="leading" secondItem="pkp-QA-QGG" secondAttribute="trailing" constant="20" id="P7r-bw-N9i"/>
+                    <constraint firstItem="pkp-QA-QGG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="YLN-5M-K9x"/>
+                    <constraint firstItem="q6H-Jw-3wr" firstAttribute="leading" secondItem="pkp-QA-QGG" secondAttribute="trailing" constant="20" id="cdN-sn-qrV"/>
+                    <constraint firstItem="q6H-Jw-3wr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="kMr-W4-dKS"/>
+                    <constraint firstItem="cGB-pM-OXe" firstAttribute="top" secondItem="q6H-Jw-3wr" secondAttribute="bottom" constant="13" id="oQY-5e-dre"/>
+                    <constraint firstAttribute="trailing" secondItem="cGB-pM-OXe" secondAttribute="trailing" constant="10" id="pla-bk-w5b"/>
+                    <constraint firstAttribute="trailing" secondItem="q6H-Jw-3wr" secondAttribute="trailing" constant="10" id="rot-Hq-tn5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="storyImage" destination="pkp-QA-QGG" id="KTy-Qe-d1W"/>
+                <outlet property="storyReadedCount" destination="cGB-pM-OXe" id="hlF-Xb-bDb"/>
+                <outlet property="storyTitle" destination="q6H-Jw-3wr" id="QrB-fd-hBE"/>
+            </connections>
+            <point key="canvasLocation" x="326" y="230"/>
+        </tableViewCell>
+    </objects>
+</document>
